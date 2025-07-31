@@ -3,7 +3,7 @@
 #read user input using shell script
 read -p "enter number: " number
 read -sp "enter password: " password
-
+echo "$password $number"
 for i in {1..100}; do
 if (( i % 2 == 0 )); then
 echo "List of even numbers $i"
