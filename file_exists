@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "Enter the file path:" filepath
+
+#check filepath exists -e and for readable -r
+if [ -e $filepath ] && [ -r $filepath ]
+then
+echo "file exists and readable"
+else
+echo "file path is not accessable"
+fi
